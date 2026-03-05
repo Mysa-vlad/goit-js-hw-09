@@ -1,3 +1,5 @@
+import SimpleLightbox from 'simplelightbox';
+
 const images = [
   {
     preview:
@@ -85,15 +87,4 @@ const markup = itemsTemplate(images);
 const list = document.querySelector('.gallery');
 list.insertAdjacentHTML('afterbegin', markup);
 
-
-
-list.addEventListener('click', (event)=>{
-    event.preventDefault();
-    if(event.target.nodeName !== 'IMG'){
-         return;
-    }
-    const instance = basicLightbox.create(`
-        <img src="${event.target.dataset.source}">
-    `);
-    instance.show();
-})
+new SimpleLightbox('.gallery a');
