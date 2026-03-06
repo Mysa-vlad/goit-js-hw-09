@@ -1,4 +1,5 @@
 import SimpleLightbox from 'simplelightbox';
+import 'simplelightbox/dist/simple-lightbox.min.css';
 
 const images = [
   {
@@ -87,4 +88,7 @@ const markup = itemsTemplate(images);
 const list = document.querySelector('.gallery');
 list.insertAdjacentHTML('afterbegin', markup);
 
-new SimpleLightbox('.gallery a');
+new SimpleLightbox('.gallery a', {
+  captionsData: 'alt',
+  captionDelay: 250,
+});
