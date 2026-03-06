@@ -1,1 +1,1 @@
-{"version":3,"file":"2-form.js","sources":[],"sourcesContent":[],"names":[],"mappings":""}
+{"version":3,"file":"2-form.js","sources":["../src/js/2-form.js"],"sourcesContent":["import { Input } from \"postcss\"\n\nconst formData = {\n    email: \"\", \n    message: \"\"\n}\nconst feedbackForm = document.querySelector(\".feedback-form\")\nfeedbackForm.addEventListener('input', ()=>{\n    \n})"],"names":["feedbackForm"],"mappings":"4HAMA,MAAMA,EAAe,SAAS,cAAc,gBAAgB,EAC5DA,EAAa,iBAAiB,QAAS,IAAI,CAE3C,CAAC"}
